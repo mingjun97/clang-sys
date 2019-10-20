@@ -2060,4 +2060,7 @@ link! {
     pub fn clang_VerbatimBlockLineComment_getText(comment: CXComment) -> CXString;
     pub fn clang_VerbatimLineComment_getText(comment: CXComment) -> CXString;
     pub fn clang_getToken(TU: CXTranslationUnit, Location: CXSourceLocation) -> * mut CXToken;
+
+    //NOTE: Customized function
+    pub fn clang_getBinaryOperatorOps(cursor: CXCursor) -> c_int;
 }
