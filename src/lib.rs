@@ -2063,4 +2063,5 @@ link! {
 
     //NOTE: Customized function
     pub fn clang_getBinaryOperatorOps(cursor: CXCursor) -> c_int;
+    pub fn clang_getTypeOfArgument(cursor: CXCursor) ->CXType;
 }
